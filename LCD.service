@@ -1,0 +1,13 @@
+[Unit]
+Description=Start LCD
+After=nss-lookup.target
+
+[Service]
+ExecStart=/home/nvidia/status/start.sh
+Environment="PYTHONPATH=$PYTHONPATH:/home/nvidia/.local/lib/python3.6/site-packages"
+WorkingDirectory=/home/nvidia/status/
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
