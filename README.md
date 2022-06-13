@@ -30,9 +30,10 @@ sudo i2cdetect -y -r 1
 函式庫來源於：https://www.circuitbasics.com/raspberry-pi-i2c-lcd-set-up-and-programming/
 您可以從上方網址內複製程式碼，或是從這篇文章的附檔下載I2C_LCD_driver.py。
 
-其中一行程式碼為ADDRESS = 0x27，請記得更改成先前查詢到的位址！
+其中兩行程式碼為ADDRESS = 0x27，請記得更改成先前查詢到的位址！
+跟I2CBUS = 0 (確認bus位址，eg.樹梅派為0，jetsion nano 為1)
 
-記得將I2C_LCD_driver.py放在我們執行python的同一資料
+最後記得將I2C_LCD_driver.py放在我們執行python的同一資料
 ### python顯示nano CPU等等資訊
 https://github.com/jeff890518/nano_lcd_info
 (下載 status 和 LCD.service)
